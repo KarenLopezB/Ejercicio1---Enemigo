@@ -11,25 +11,34 @@ namespace Videojuego
         public int PosicionX { get; set; }
         public int PosicionY { get; set; }
 
-        private string _puntosganados;
-        public string PuntosGanados {
+        private int _puntosganados;
+        public int PuntosGanados {
             get {
                 return _puntosganados;
             }
             set {
-                if (value.Length >= 100)
+                if (value >= 100)
                 {
                     _puntosganados = value;
                 }
                 else
                 {
-                    throw new Exception();
+                    throw new Exception("El numero de puntos es invalido");
                 }
             }
         }
 
-        public string Movimiento { get; set; }
-        public string Disparar {get; set; }
-        public string Explotar { get; set; }
+        public void Movimiento ()
+        {
+
+        }
+        public void Disparar ()
+        {
+
+        }
+        public void Explotar ()
+        {
+
+        }
     }
 }
