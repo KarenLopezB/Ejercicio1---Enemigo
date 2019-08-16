@@ -28,7 +28,7 @@ namespace Videojuego
             }
         }
 
-        public void Mover ()
+        public void Movimiento ()
         {
 
         }
